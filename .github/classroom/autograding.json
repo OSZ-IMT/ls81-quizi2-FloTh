@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "parserVorhanden",
+      "setup": "",
+      "run": "gradle test --tests JSONTest.parserVorhanden",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 2
+    },
+    {
+      "name": "parserVorhandenSpeichern",
+      "setup": "",
+      "run": "gradle test --tests JSONTest.parserVorhandenSpeichern",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 3
+    },
+    {
+      "name": "parserEingebundenController",
+      "setup": "",
+      "run": "gradle test --tests JSONTest.parserEingebundenController",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 1
+    },
+    {
+      "name": "parserEingebundenFileParser",
+      "setup": "",
+      "run": "gradle test --tests JSONTest.parserEingebundenFileParser",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 2
+    },
+    {
+      "name": "jsonWrite",
+      "setup": "",
+      "run": "gradle test --tests JSONTest.jsonWrite",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 2,
+      "points": 2
+    }
+  ]
+}
