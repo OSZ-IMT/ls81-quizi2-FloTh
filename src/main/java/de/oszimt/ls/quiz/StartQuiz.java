@@ -16,7 +16,7 @@ public class StartQuiz {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Controller controller = new Controller("Klasse.xml","Klasse.csv");
+					Controller controller = new Controller("Klasse.xml","Klasse.csv","Klasse.json");
 					QuizGUI frame = new QuizGUI(controller);
 					frame.setVisible(true);
 				} catch (Exception e) {
