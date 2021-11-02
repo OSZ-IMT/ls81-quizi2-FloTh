@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Klasse.xml>
+    <Spielstand>
+        <Partei name="Lehrer">2</Partei>
+        <Partei name="Schüler">2</Partei>
+    </Spielstand>
+    <Mitspieler>
+        <Schueler name="name0" vorname="vorname0">
+            <Joker>7</Joker>
+            <Blamiert>7</Blamiert>
+            <Fragen>7</Fragen>
+        </Schueler>
+        <Schueler name="name1" vorname="vorname1">
+            <Joker>7</Joker>
+            <Blamiert>7</Blamiert>
+            <Fragen>7</Fragen>
+        </Schueler>
+        <Schueler name="name2" vorname="vorname2">
+            <Joker>6</Joker>
+            <Blamiert>6</Blamiert>
+            <Fragen>6</Fragen>
+        </Schueler>
+        <Schueler name="name3" vorname="vorname3">
+            <Joker>6</Joker>
+            <Blamiert>6</Blamiert>
+            <Fragen>6</Fragen>
+        </Schueler>
+        <Schueler name="name4" vorname="vorname4">
+            <Joker>6</Joker>
+            <Blamiert>6</Blamiert>
+            <Fragen>6</Fragen>
+        </Schueler>
+        <Schueler name="name5" vorname="vorname5">
+            <Joker>8</Joker>
+            <Blamiert>8</Blamiert>
+            <Fragen>8</Fragen>
+        </Schueler>
+        <Schueler name="name6" vorname="vorname6">
+            <Joker>8</Joker>
+            <Blamiert>8</Blamiert>
+            <Fragen>8</Fragen>
+        </Schueler>
+        <Schueler name="name7" vorname="vorname7">
+            <Joker>6</Joker>
+            <Blamiert>6</Blamiert>
+            <Fragen>6</Fragen>
+        </Schueler>
+        <Schueler name="name8" vorname="vorname8">
+            <Joker>5</Joker>
+            <Blamiert>5</Blamiert>
+            <Fragen>5</Fragen>
+        </Schueler>
+        <Schueler name="name9" vorname="vorname9">
+            <Joker>5</Joker>
+            <Blamiert>5</Blamiert>
+            <Fragen>5</Fragen>
+        </Schueler>
+    </Mitspieler>
+</Klasse.xml>

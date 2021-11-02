@@ -1,0 +1,43 @@
+plugins {
+    id 'java'
+}
+
+group 'de.oszimt.ls'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    // https://mvnrepository.com/artifact/javax.json/javax.json-api
+    implementation group: 'javax.json', name: 'javax.json-api', version: '1.1.4'
+
+    // https://mvnrepository.com/artifact/org.glassfish/javax.json
+    implementation 'org.glassfish:javax.json:1.1.4'
+
+}
+
+test {
+    useJUnitPlatform()
+}
+
+/**
+ * 1st approach: Setting encoding during compilation in Java and Test classes
+ */
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
+
+/**
+ * 2nd approach: Setting encoding during compilation in Java and Test classes
+ */
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+tasks.withType(Test) {
+    systemProperty "file.encoding", "UTF-8"
+}
+
