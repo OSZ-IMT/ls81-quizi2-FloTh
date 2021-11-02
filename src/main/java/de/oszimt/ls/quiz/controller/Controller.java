@@ -15,9 +15,9 @@ public class Controller {
 	private int frageZeiger;
 	public final int FRAGEANZAHL = 10;
 
-	public Controller(String xmlPfad, String csvPfad) {
+	public Controller(String xmlPfad, String csvPfad, String jsonPfad) {
 		model = new Model();
-		fileParser = new FileParser(xmlPfad, csvPfad);
+		fileParser = new FileParser(xmlPfad, csvPfad, jsonPfad);
 		model = fileParser.laden();
 	}
 
