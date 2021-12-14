@@ -1,11 +1,33 @@
 package de.oszimt.ls.quiz.model.file;
 
 import de.oszimt.ls.quiz.model.Model;
+import de.oszimt.ls.quiz.StartQuiz;
+
+import javax.json.*;
+import javax.json.stream.JsonGenerator;
+import java.io.File;
+import java.io.FileWriter;
+import java.util.HashMap;
 
 public class JSONParser {
-    public Model laden() {
+    private File datei
+            
+    public Model laden(String pfad) {
+        this.datei = new File(pfad);
     }
 
     public void speichern(Model model) {
+        JsonObjectBuilder builder = Json.createObjectBuilder();
+        JsonArrayBuilder arraySchueler = Json.createArrayBuilder();
+        for (int i = 0; i < model.getAlleSchueler().size(); i++) {
+            JsonObjectBuilder schueler = Json.createObjectBuilder();
+            schueler.add("name", model.getAlleSchueler().get(i).getVorname());
+            schueler.add("joker", model.getAlleSchueler().get(i).getJoker());
+            schueler.add("blamiert", model.getAlleSchueler().get(i).getBlamiert());
+            schueler.add("fragen", model.getAlleSchueler().get(i).getFragen());
+            arraySchueler.add(schueler);
+        }
+        builder.add("Schueler", arraySchueler);
+        JsonObject jo = builder.build();
     }
 }
